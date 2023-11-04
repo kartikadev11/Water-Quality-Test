@@ -1,0 +1,83 @@
+{% extends 'base.html' %} {% block head %}
+<title>Water Quality Test</title>
+{% endblock %} {% block body %}
+<div class="container-contact100">
+  <div class="wrap-contact100">
+    <form class="contact100-form validate-form" action="/" method="POST">
+      <span class="contact100-form-title"> Uji Klasfikasi Kelayakan Air untuk Dikonsumsi</span>
+      <div>
+        <h5 style="text-align: center">Input Kandungan Air</h5>
+      </div>
+      <br />
+      <br />
+
+      <div class="wrap-input100 validate-input">
+        <span class="label-input100">ph (1-14)</span>
+        <input class="input100" type="text" placeholder="Masukkan ph air" name="ph" id="ph" required />
+        <span class="focus-input100"></span>
+      </div>
+
+      <div class="wrap-input100 validate-input">
+        <span class="label-input100">Hardness</span>
+        <input class="input100" type="text" placeholder="Masukkan total Kesadahan air" name="Hardness" id="glukosa" required />
+        <span class="focus-input100"></span>
+      </div>
+
+      <div class="wrap-input100 validate-input">
+        <span class="label-input100">Solids</span>
+        <input class="input100" type="text" placeholder="Masukkan total padatan terlarut/TDS" name="Solids" id="Solids" required />
+        <span class="focus-input100"></span>
+      </div>
+
+      <div class="wrap-input100 validate-input">
+        <span class="label-input100">Chloramines</span>
+        <input class="input100" type="text" placeholder="Masukkan kadar klorin" name="Chloramines" id="Chloramines" required />
+        <span class="focus-input100"></span>
+      </div>
+
+      <div class="wrap-input100 validate-input">
+        <span class="label-input100">Sulfate</span>
+        <input class="input100" type="text" placeholder="Masukkan konsentrasi sulfat" name="Sulfate" id="Sulfate" required />
+        <span class="focus-input100"></span>
+      </div>
+
+      <div class="wrap-input100 validate-input">
+        <span class="label-input100">Conductifity</span>
+        <input class="input100" type="text" placeholder="Masukkan nilai Conductifity" name="Conductifity" id="Conductifity" required />
+        <span class="focus-input100"></span>
+      </div>
+
+      <div class="wrap-input100 validate-input">
+        <span class="label-input100">Organic Carbon</span>
+        <input class="input100" type="text" placeholder="Masukkan total Organic Carbon" name="Organic Carbon" id="Organic Carbon" required />
+        <span class="focus-input100"></span>
+      </div>
+
+      <div class="wrap-input100 validate-input">
+        <span class="label-input100">Trihalomethanes</span>
+        <input class="input100" type="text" placeholder="Masukkan Konsentrasi THM" name="Trihalomethanes" id="Trihalomethanes" required />
+        <span class="focus-input100"></span>
+      </div>
+
+      <div class="wrap-input100 validate-input">
+        <span class="label-input100">Turbidity</span>
+        <input class="input100" type="text" placeholder="Masukkan nilai Kekeruhan air" name="Turbidity" id="Turbidity" required />
+        <span class="focus-input100"></span>
+      </div>
+
+      <div class="container-contact100-form-btn">
+        <div class="wrap-contact100-form-btn">
+          <div class="contact100-form-bgbtn"></div>
+          <button class="contact100-form-btn">
+            <span>
+              Prediksi
+              <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+            </span>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+{% endblock %}

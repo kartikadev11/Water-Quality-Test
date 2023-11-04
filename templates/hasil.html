@@ -1,0 +1,43 @@
+{% extends 'base.html' %} {% block head %}
+<title>Water Quality Test</title>
+{% endblock %} {% block body %}
+<div class="container-contact100">
+  <div class="wrap-contact100">
+    <form class="contact100-form validate-form" action="/" method="GET">
+        <h7 style="text-align: justify;">
+            Berdasarkann Input Kandungan, Maka Air tersebut
+            <br>
+            <br>
+         </h7>
+         
+         <h5 style="text-align: center;">
+            Dikategorikan Sebagai:
+         </h5>
+         <br> 
+         <h4 style="text-align: center;">
+            <b><u>
+              {% if finalData[0] == 1 %}
+            <span class="contact100-form-title">
+                Air Layak Dikonsumsi
+            </span>
+
+            {% else %}
+            <span class="contact100-form-title">
+                Air Tidak Layak Dikonsumsi
+            </span>
+
+            {% endif %}
+            </u></b> 
+      <div class="container-contact100-form-btn">
+        <div class="wrap-contact100-form-btn">
+          <div class="contact100-form-bgbtn"></div>
+          <button class="contact100-form-btn">
+            <span> Selesai </span>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+{% endblock %}
